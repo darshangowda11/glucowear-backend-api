@@ -23,7 +23,7 @@ const wearableOthers = require("./routes/wearableothers.routes");
 
 // Load environment variables
 dotenv.config(); 
-const port = process.env.PORT;
+const port = process.env.PORT || 3002;
 
 //  Middlewares: - Enable CORS
 app.use(cors()); 
